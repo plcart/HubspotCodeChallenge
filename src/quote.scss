@@ -1,0 +1,83 @@
+$bg-light-color: #f9f8f6;
+$primary-color: #00a4e2;
+$accent-color: #ff6c00;
+$text-primary-color: #545454;
+$text-accent-color: #fff;
+
+.quote {
+  background-color: $bg-light-color;
+  padding: 32px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    position: relative;
+    border-left: 2px solid $accent-color;
+    padding-left: 24px;
+    max-width: 375px;
+    margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+
+    &:before {
+      content: "“";
+      font-family: serif;
+      position: absolute;
+      height: 24px;
+      width: 24px;
+      border: 2px solid $bg-light-color;
+      left: -15px; // half width + 2px border + 1px of container border
+      top: -14px; // half height + 2px border
+
+      background-color: $accent-color;
+      line-height: 40px;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      color: $text-accent-color;
+      border-radius: 50%;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      left: -5px; // half width + 1px of container border
+      bottom: -4px;
+      background-color: $accent-color;
+      border-radius: 50%;
+    }
+  }
+
+  &__content {
+    margin: 0px;
+    padding: 8px 0;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: $text-primary-color;
+  }
+
+  &__owner {
+    font-size: 12px;
+    font-weight: 600;
+    color: $text-primary-color;
+    margin-top: 8px;
+    line-height: 1em;
+  }
+
+  &__action-link {
+    color: $text-accent-color;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    background-color: $primary-color;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1em;
+    border-radius: 2px;
+    margin: 16px 8px;
+  }
+}

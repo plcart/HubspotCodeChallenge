@@ -4,19 +4,32 @@
   "description": "HubSpot Code Exercise",
   "main": "./build/index.js",
   "scripts": {
-    "dev": "parcel src/views/index.html --open --out-dir build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "parcel build src/index.html --out-dir build"
+    "dev": "react-scripts start",
+    "test": "react-scripts test",
+    "prod": "react-scripts build"
   },
   "author": "HubSpot Applicant",
   "license": "ISC",
   "private": true,
   "dependencies": {
-    "parcel-bundler": "^1.12.3"
+    "node-sass": "^4.13.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5"
   },
-  "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5"
+  "devDependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
