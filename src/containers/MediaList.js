@@ -3,12 +3,13 @@ import { connect } from 'react-redux';
 
 import './MediaList.scss';
 import { getFilteredMedia } from '../store/selectors';
+import Media from '../components/Media';
 
 class MediaList extends React.Component {
     render() {
         return (
             <div className="MediaList">
-                {this.props.medias.map(m => m.title)}
+                {this.props.medias.map((m, i) => <Media key="i" data={m}></Media>)}
             </div>
         );
     }
