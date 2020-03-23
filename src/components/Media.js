@@ -4,8 +4,8 @@ import './Media.scss';
 
 export default class extends React.Component {
 
-    capitalize(str) {
-        return str.charAt(0).toUpperCase() + str.slice(1);
+    capitalize([firstChar, ...remaing]) {
+        return firstChar.toUpperCase() + remaing.join('');
     }
     render() {
         return (

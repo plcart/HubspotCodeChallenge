@@ -9,7 +9,7 @@ class MediaList extends React.Component {
     render() {
         return (
             <div className="MediaList">
-                {this.props.medias.map((m, i) => <Media key="i" data={m}></Media>)}
+                {this.props.medias.map((m, i) => <Media key={i} data={m}></Media>)}
             </div>
         );
     }
