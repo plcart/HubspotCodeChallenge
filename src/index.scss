@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Roboto', 'Montserrat', sans-serif;
+  font-family: "Roboto", "Montserrat", sans-serif;
 }
 
 .exercise-header {
@@ -9,4 +9,8 @@ body {
   text-align: center;
   color: #fff;
   background-color: #00a4bd;
+}
+
+* {
+  box-sizing: border-box;
 }

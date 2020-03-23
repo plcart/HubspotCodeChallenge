@@ -16,7 +16,7 @@ $text-accent-color: #fff;
     position: relative;
     border-left: 2px solid $accent-color;
     padding-left: 24px;
-    max-width: 375px;
+    max-width: 420px;
     margin-right: 16px;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,6 @@ $text-accent-color: #fff;
   &__content {
     margin: 0px;
     padding: 8px 0;
-    text-align: justify;
     font-size: 16px;
     line-height: 1.5em;
     color: $text-primary-color;
@@ -79,5 +78,6 @@ $text-accent-color: #fff;
     line-height: 1em;
     border-radius: 4px;
     margin: 16px 8px;
+    cursor: pointer;
   }
 }

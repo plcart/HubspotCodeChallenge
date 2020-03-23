@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.scss';
+import Filter from './containers/Filter';
 
 
 export default class extends React.Component {
     render() {
         return (<div className="App">
-            <h1>React Ready</h1>
+            <Filter></Filter>
         </div>);
     }
 
