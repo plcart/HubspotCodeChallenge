@@ -1,0 +1,10 @@
+@import "./style/variables.scss";
+
+.App {
+  margin: 2px;
+  border: thin solid $light-grey;
+  &__divider {
+    border-bottom: unset;
+    border-color: $light-grey;
+  }
+}

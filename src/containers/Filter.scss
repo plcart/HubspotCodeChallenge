@@ -1,7 +1,70 @@
+@import "../style/variables";
+
 .Filter {
-  padding: 8px;
-  
+  padding: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+
+  &__filter-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40px;
+    flex: 0 0 100%;
+  }
+
   &__dropdown-options {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100%;
+    @media screen and (min-width: $small) {
+      max-width: 300px;
+      flex: 1 1;
+    }
+    .DropdownMultiSelect {
+      margin: 4px;
+      flex: 0 0 100%;
+      @media screen and (min-width: $small) {
+        flex: 1 1;
+      }
+    }
+  }
+
+  &__search-input {
+    height: 32px;
+    flex: 0 0 100%;
+    margin: 4px 0;
+    padding-left: 4px;
+    @media screen and (min-width: $small) {
+      max-width: 300px;
+      flex: 1 1;
+    }
+  }
+
+  &__radio-options {
+    display: flex;
+    align-items: center;
+  }
+
+  &__radio-option {
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  &__clear-button {
+    appearance: none;
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #58a7cc;
+    font-weight: 700;
   }
 }
